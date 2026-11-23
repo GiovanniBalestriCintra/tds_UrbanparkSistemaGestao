@@ -2,10 +2,6 @@
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace backUrbanPark.Repository
 {
@@ -28,7 +24,9 @@ namespace backUrbanPark.Repository
         /// <returns></returns>
         public Vaga? BuscarPorId(int id)
         {
-            string sql = "SELECT id_vaga, numero_vaga, vaga, status FROM vagas WHERE id = @Id";
+            string sql = @"SELECT id_vaga, numero_vaga, tipo, status
+                           FROM vagas
+                           WHERE id_vaga = @Id";
 
             using (var cmd = new MySqlCommand(sql))
             {
@@ -38,16 +36,12 @@ namespace backUrbanPark.Repository
                 {
                     if (reader.Read())
                     {
-    
                         return MapearVaga(reader);
-
                     }
-
                 }
             }
 
             return null;
-
         }
 
         /// <summary>
@@ -56,54 +50,47 @@ namespace backUrbanPark.Repository
         /// <returns></returns>
         public List<Vaga> ListarTodos()
         {
-            string sql = "SELECT id_vaga, numero_vaga, vaga, status FROM vagas";
+            string sql = @"SELECT id_vaga, numero_vaga, tipo, status
+                           FROM vagas";
 
             List<Vaga> vagas = new List<Vaga>();
 
             using (var cmd = new MySqlCommand(sql))
             {
-
                 using (var reader = Banco.ExecutarConsulta(cmd))
                 {
-
                     while (reader.Read())
                     {
-
                         vagas.Add(MapearVaga(reader));
-
                     }
-
                 }
             }
 
-            return null;
-
+            return vagas;
         }
 
-
         /// <summary>
-        /// Método auxiliar para converter uma linha do MySqlDatReader em um objeto Vaga.
+        /// Método auxiliar para converter uma linha do MySqlDataReader em um objeto Vaga.
         /// </summary>
         /// <param name="reader"></param>
         /// <returns></returns>
         private Vaga MapearVaga(MySqlDataReader reader)
         {
-            /// MAPEAMENTO DO RETORNO DO BANCO PARA OBJETO VAGA
-            /// 
+            int idVaga = reader.GetInt32("id_vaga");
+            int numeroVaga = reader.GetInt32("numero_vaga");
 
-            int id_vaga = reader.GetInt32("id_Vaga");
-            int numero_vaga = reader.GetInt32("numero_vaga");
-            TipoVaga tipoVaga = Enum.Parse<TipoVaga>(reader.GetString("tipo"));
-            TipoStatus tipoStatus = Enum.Parse<TipoStatus>(reader.GetString("status"));
+            TipoVaga tipoVaga =
+                Enum.Parse<TipoVaga>(reader.GetString("tipo"));
 
-            Vaga vagaBanco = new Vaga(id_vaga, numero_vaga, tipoVaga, tipoStatus);
+            TipoStatus tipoStatus =
+                Enum.Parse<TipoStatus>(reader.GetString("status"));
 
-            return new Vaga(id_vaga, numero_vaga, tipoVaga, tipoStatus);
+            return new Vaga(
+                idVaga,
+                numeroVaga,
+                tipoVaga,
+                tipoStatus
+            );
         }
-
-
-
-
-    } // Classe
-
-} // Namespace
+    }
+}
