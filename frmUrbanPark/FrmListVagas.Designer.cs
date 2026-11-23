@@ -28,32 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ctrStatusVagas1 = new frmUrbanPark.Parts.ctrStatusVagas();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             SuspendLayout();
             // 
-            // ctrStatusVagas1
+            // flowLayoutPanel1
             // 
-            ctrStatusVagas1.BackColor = Color.FromArgb(223, 247, 231);
-            ctrStatusVagas1.BorderStyle = BorderStyle.FixedSingle;
-            ctrStatusVagas1.Location = new Point(12, 35);
-            ctrStatusVagas1.Name = "ctrStatusVagas1";
-            ctrStatusVagas1.Size = new Size(188, 184);
-            ctrStatusVagas1.TabIndex = 0;
+            flowLayoutPanel1.Location = new Point(161, 72);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(200, 100);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // FrmListVagas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(ctrStatusVagas1);
+            Controls.Add(flowLayoutPanel1);
             Name = "FrmListVagas";
-            Text = "FrmListVagas";
+            Text = " ";
             Load += FrmListVagas_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Parts.ctrStatusVagas ctrStatusVagas1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
