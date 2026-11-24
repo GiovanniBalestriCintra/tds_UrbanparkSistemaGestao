@@ -5,14 +5,14 @@ using System.Collections.Generic;
 
 namespace backUrbanPark.Repository
 {
-    internal class VagaRepository
+    public static class VagaRepository
     {
         /// <summary>
         /// Insere uma vaga no banco de dados.
         /// </summary>
         /// <param name="vaga"></param>
         /// <returns></returns>
-        public int Inserir(Vaga vaga)
+        public static int Inserir(Vaga vaga)
         {
             return 1;
         }
@@ -22,7 +22,7 @@ namespace backUrbanPark.Repository
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Vaga? BuscarPorId(int id)
+        public static Vaga? BuscarPorId(int id)
         {
             string sql = @"SELECT id_vaga, numero_vaga, tipo, status
                            FROM vagas
@@ -48,7 +48,7 @@ namespace backUrbanPark.Repository
         /// Retorna todas as vagas cadastradas.
         /// </summary>
         /// <returns></returns>
-        public List<Vaga> ListarTodos()
+        public static List<Vaga> ListarTodos()
         {
             string sql = @"SELECT id_vaga, numero_vaga, tipo, status
                            FROM vagas";
@@ -74,7 +74,7 @@ namespace backUrbanPark.Repository
         /// </summary>
         /// <param name="reader"></param>
         /// <returns></returns>
-        private Vaga MapearVaga(MySqlDataReader reader)
+        private static Vaga MapearVaga(MySqlDataReader reader)
         {
             int idVaga = reader.GetInt32("id_vaga");
             int numeroVaga = reader.GetInt32("numero_vaga");

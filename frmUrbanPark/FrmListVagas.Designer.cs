@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            flwCardVagas = new FlowLayoutPanel();
             SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flwCardVagas
             // 
-            flowLayoutPanel1.Location = new Point(161, 72);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(200, 100);
-            flowLayoutPanel1.TabIndex = 0;
+            flwCardVagas.Dock = DockStyle.Fill;
+            flwCardVagas.Location = new Point(0, 0);
+            flwCardVagas.Name = "flwCardVagas";
+            flwCardVagas.Padding = new Padding(15);
+            flwCardVagas.Size = new Size(800, 450);
+            flwCardVagas.TabIndex = 0;
             // 
             // FrmListVagas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(flwCardVagas);
             Name = "FrmListVagas";
             Text = " ";
             Load += FrmListVagas_Load;
@@ -52,6 +54,6 @@
 
         #endregion
 
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flwCardVagas;
     }
 }

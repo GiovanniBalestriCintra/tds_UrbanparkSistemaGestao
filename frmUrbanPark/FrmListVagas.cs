@@ -1,4 +1,7 @@
-﻿using System;
+﻿using backUrbanPark.Model;
+using backUrbanPark.Repository;
+using frmUrbanPark.Parts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +23,36 @@ namespace frmUrbanPark
         private void FrmListVagas_Load(object sender, EventArgs e)
         {
 
+            CarregarDadosEMontarVisualizacao();
+
         }
+
+
+        private void CarregarDadosEMontarVisualizacao()
+        {
+
+            List<Vaga> listaDeVagas = VagaRepository.ListarTodos();
+
+            flwCardVagas.Controls.Clear();
+
+            foreach (Vaga vaga in listaDeVagas)
+            {
+                string strNumeroVaga = vaga.NumeroVaga.ToString();
+                StatusVaga statusVaga = Enum.Parse<StatusVaga>(vaga.TipoStatus.ToString());
+                int idVaga = vaga.Id;
+
+                ctrStatusVagas cardVaga = new ctrStatusVagas();
+
+                cardVaga.IdVaga = idVaga;
+                cardVaga.StatusVaga = statusVaga;
+                cardVaga.NumeroVaga = strNumeroVaga;
+
+                flwCardVagas.Controls.Add(cardVaga);
+
+
+            }
+
+        }
+
     }
 }

@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            lblStatusVaga = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            picStatusVaga = new PictureBox();
+            lblNumeroVaga = new Label();
+            ((System.ComponentModel.ISupportInitialize)picStatusVaga).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // picStatusVaga
             // 
-            pictureBox1.Image = Properties.Resources.carIconVerde;
-            pictureBox1.Location = new Point(67, 71);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            picStatusVaga.Image = Properties.Resources.carIconVerde;
+            picStatusVaga.Location = new Point(38, 57);
+            picStatusVaga.Name = "picStatusVaga";
+            picStatusVaga.Size = new Size(50, 50);
+            picStatusVaga.TabIndex = 0;
+            picStatusVaga.TabStop = false;
             // 
-            // lblStatusVaga
+            // lblNumeroVaga
             // 
-            lblStatusVaga.AutoSize = true;
-            lblStatusVaga.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblStatusVaga.Location = new Point(67, 31);
-            lblStatusVaga.Name = "lblStatusVaga";
-            lblStatusVaga.Size = new Size(48, 20);
-            lblStatusVaga.TabIndex = 1;
-            lblStatusVaga.Text = "LIVRE";
+            lblNumeroVaga.Dock = DockStyle.Top;
+            lblNumeroVaga.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNumeroVaga.Location = new Point(0, 0);
+            lblNumeroVaga.Name = "lblNumeroVaga";
+            lblNumeroVaga.Size = new Size(130, 54);
+            lblNumeroVaga.TabIndex = 1;
+            lblNumeroVaga.Text = "01";
+            lblNumeroVaga.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ctrStatusVagas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(223, 247, 231);
-            Controls.Add(lblStatusVaga);
-            Controls.Add(pictureBox1);
+            Controls.Add(lblNumeroVaga);
+            Controls.Add(picStatusVaga);
             Name = "ctrStatusVagas";
-            Size = new Size(188, 184);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Size = new Size(130, 130);
+            Load += ctrStatusVagas_Load;
+            ((System.ComponentModel.ISupportInitialize)picStatusVaga).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Label lblStatusVaga;
+        private PictureBox picStatusVaga;
+        private Label lblNumeroVaga;
     }
 }

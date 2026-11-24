@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace backUrbanPark.Model
 {
-    internal class Vaga
+    public class Vaga
     {
 
         // Variáveis
@@ -18,9 +18,8 @@ namespace backUrbanPark.Model
 
         public int Id { get => _id; set => _id = value; }
         public int NumeroVaga { get => _numeroVaga; set => _numeroVaga = value; }
-        internal TipoVaga TipoVaga { get => _tipoVaga; set => _tipoVaga = value; }
-        internal TipoStatus Tipostatus { get => _tipostatus; set => _tipostatus = value; }
-
+        public TipoVaga TipoVaga { get => _tipoVaga; set => _tipoVaga = value; }
+        public TipoStatus TipoStatus { get => _tipostatus; set => _tipostatus = value; }
 
         public Vaga(int numeroVaga, TipoVaga tipoVaga, TipoStatus tipostatus)
         {
