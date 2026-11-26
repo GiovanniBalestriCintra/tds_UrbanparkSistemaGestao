@@ -37,9 +37,11 @@
             txtCorModelo = new TextBox();
             txtNomeCliente = new TextBox();
             lblDataSaida = new Label();
-            pictureBox1 = new PictureBox();
             grpMovimentacao = new GroupBox();
             grpCalculo = new GroupBox();
+            lblValorAPagar = new TextBox();
+            lblValorPagar = new Label();
+            textBox3 = new TextBox();
             txtInfoTarifa = new TextBox();
             txtInfoTempoPermanencia = new TextBox();
             lblTarifaVigente = new Label();
@@ -58,15 +60,13 @@
             lblVaga = new Label();
             lblPlaca = new Label();
             grpBuscarVeiculo = new GroupBox();
-            textBox3 = new TextBox();
-            lblValorPagar = new Label();
-            lblValorAPagar = new TextBox();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             grpMovimentacao.SuspendLayout();
             grpCalculo.SuspendLayout();
             grpDadosVeiculo.SuspendLayout();
             grpBuscarVeiculo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -169,18 +169,6 @@
             lblDataSaida.TabIndex = 0;
             lblDataSaida.Text = "Data de Saída:";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = Properties.Resources.BannerSaida;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(914, 124);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
-            // 
             // grpMovimentacao
             // 
             grpMovimentacao.Controls.Add(grpCalculo);
@@ -217,6 +205,36 @@
             grpCalculo.TabIndex = 5;
             grpCalculo.TabStop = false;
             grpCalculo.Text = "Cálculo do Estacionamento";
+            // 
+            // lblValorAPagar
+            // 
+            lblValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
+            lblValorAPagar.BorderStyle = BorderStyle.None;
+            lblValorAPagar.Location = new Point(297, 114);
+            lblValorAPagar.Multiline = true;
+            lblValorAPagar.Name = "lblValorAPagar";
+            lblValorAPagar.Size = new Size(172, 33);
+            lblValorAPagar.TabIndex = 4;
+            // 
+            // lblValorPagar
+            // 
+            lblValorPagar.AutoSize = true;
+            lblValorPagar.BackColor = Color.FromArgb(223, 247, 231);
+            lblValorPagar.ForeColor = SystemColors.Desktop;
+            lblValorPagar.Location = new Point(11, 119);
+            lblValorPagar.Name = "lblValorPagar";
+            lblValorPagar.Size = new Size(117, 23);
+            lblValorPagar.TabIndex = 3;
+            lblValorPagar.Text = "Valor a Pagar:";
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.FromArgb(223, 247, 231);
+            textBox3.Location = new Point(7, 111);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(462, 39);
+            textBox3.TabIndex = 2;
             // 
             // txtInfoTarifa
             // 
@@ -425,35 +443,17 @@
             grpBuscarVeiculo.TabStop = false;
             grpBuscarVeiculo.Text = "Buscar Veículo";
             // 
-            // textBox3
+            // pictureBox1
             // 
-            textBox3.BackColor = Color.FromArgb(223, 247, 231);
-            textBox3.Location = new Point(7, 111);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(462, 39);
-            textBox3.TabIndex = 2;
-            // 
-            // lblValorPagar
-            // 
-            lblValorPagar.AutoSize = true;
-            lblValorPagar.BackColor = Color.FromArgb(223, 247, 231);
-            lblValorPagar.ForeColor = SystemColors.Desktop;
-            lblValorPagar.Location = new Point(11, 119);
-            lblValorPagar.Name = "lblValorPagar";
-            lblValorPagar.Size = new Size(117, 23);
-            lblValorPagar.TabIndex = 3;
-            lblValorPagar.Text = "Valor a Pagar:";
-            // 
-            // lblValorAPagar
-            // 
-            lblValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
-            lblValorAPagar.BorderStyle = BorderStyle.None;
-            lblValorAPagar.Location = new Point(297, 114);
-            lblValorAPagar.Multiline = true;
-            lblValorAPagar.Name = "lblValorAPagar";
-            lblValorAPagar.Size = new Size(172, 33);
-            lblValorAPagar.TabIndex = 4;
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = Properties.Resources.BannerSaida;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(914, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // FormRegistrarSaida
             // 
@@ -469,7 +469,6 @@
             Name = "FormRegistrarSaida";
             Text = "FormRegistrarSaida";
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             grpMovimentacao.ResumeLayout(false);
             grpMovimentacao.PerformLayout();
             grpCalculo.ResumeLayout(false);
@@ -478,6 +477,7 @@
             grpDadosVeiculo.PerformLayout();
             grpBuscarVeiculo.ResumeLayout(false);
             grpBuscarVeiculo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -492,7 +492,6 @@
         private TextBox txtCorModelo;
         private TextBox txtNomeCliente;
         private Label lblDataSaida;
-        private PictureBox pictureBox1;
         private GroupBox grpMovimentacao;
         private MaskedTextBox maskedTextBox1;
         private Label lblPlacaVeiculo;
@@ -516,5 +515,6 @@
         private TextBox txtInfoTarifa;
         private Label lblValorPagar;
         private TextBox textBox3;
+        private PictureBox pictureBox1;
     }
 }

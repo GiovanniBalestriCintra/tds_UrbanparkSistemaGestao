@@ -46,13 +46,13 @@
             lblCliente = new Label();
             btnRegistrarEntrada = new Button();
             btnCancelar = new Button();
-            BannerEntrada = new PictureBox();
             panel1 = new Panel();
+            BannerEntrada = new PictureBox();
             grpBuscarVeiculo.SuspendLayout();
             grpMovimentacao.SuspendLayout();
             grpDadosVeiculo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)BannerEntrada).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BannerEntrada).BeginInit();
             SuspendLayout();
             // 
             // grpBuscarVeiculo
@@ -271,18 +271,6 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // BannerEntrada
-            // 
-            BannerEntrada.Dock = DockStyle.Top;
-            BannerEntrada.Image = Properties.Resources.BannerEntrada;
-            BannerEntrada.Location = new Point(0, 0);
-            BannerEntrada.Margin = new Padding(3, 4, 3, 4);
-            BannerEntrada.Name = "BannerEntrada";
-            BannerEntrada.Size = new Size(914, 124);
-            BannerEntrada.SizeMode = PictureBoxSizeMode.Zoom;
-            BannerEntrada.TabIndex = 6;
-            BannerEntrada.TabStop = false;
-            // 
             // panel1
             // 
             panel1.Controls.Add(btnRegistrarEntrada);
@@ -293,6 +281,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(914, 67);
             panel1.TabIndex = 7;
+            // 
+            // BannerEntrada
+            // 
+            BannerEntrada.Dock = DockStyle.Top;
+            BannerEntrada.Image = Properties.Resources.BannerEntrada;
+            BannerEntrada.Location = new Point(0, 0);
+            BannerEntrada.Margin = new Padding(3, 4, 3, 4);
+            BannerEntrada.Name = "BannerEntrada";
+            BannerEntrada.Size = new Size(914, 100);
+            BannerEntrada.SizeMode = PictureBoxSizeMode.StretchImage;
+            BannerEntrada.TabIndex = 6;
+            BannerEntrada.TabStop = false;
             // 
             // FrmRegistrarEntrada
             // 
@@ -313,8 +313,8 @@
             grpMovimentacao.PerformLayout();
             grpDadosVeiculo.ResumeLayout(false);
             grpDadosVeiculo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)BannerEntrada).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)BannerEntrada).EndInit();
             ResumeLayout(false);
         }
 
@@ -337,7 +337,7 @@
         private DateTimePicker dtInfoDtEntrada;
         private DateTimePicker dtInfoHrEntrada;
         private Label lblHoraEntrada;
-        private PictureBox BannerEntrada;
         private Panel panel1;
+        private PictureBox BannerEntrada;
     }
 }
