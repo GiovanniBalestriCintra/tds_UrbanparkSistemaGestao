@@ -18,12 +18,5 @@ namespace frmUrbanPark
             InitializeComponent();
         }
 
-        private void btnRegistrarEntrada_Click(object sender, EventArgs e)
-        {
-
-
-
-
-        }
     }
 }
