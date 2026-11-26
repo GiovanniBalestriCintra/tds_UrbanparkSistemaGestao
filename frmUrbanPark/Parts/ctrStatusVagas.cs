@@ -24,6 +24,11 @@ namespace frmUrbanPark.Parts
         private string _numeroVaga;
         private int _idVaga;
 
+
+        // Evento púlico com assinatura de delegado EventHandler, que será disparado quando o card for clicado (object Sender, EventArgs e)
+        public event EventHandler cardClicado;
+
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public StatusVaga StatusVaga { get => _statusVaga; set => _statusVaga = value; }
 
@@ -42,6 +47,20 @@ namespace frmUrbanPark.Parts
         public ctrStatusVagas()
         {
             InitializeComponent();
+
+
+            // =================================================================
+            // 2. INSCRIÇÃO NOS EVENTOS INTERNOS (+=)
+            // No Windows Forms, clicar em um Label ou PictureBox dentro de um
+            // UserControl NÃO dispara o Click do UserControl automaticamente.
+            // Por isso, conectamos o Click do fundo, do texto e da imagem
+            // ao mesmo método (AoClicarNoCard), garantindo que o card inteiro
+            // seja clicável.
+            // =================================================================
+            this.Click += AoClicarNoCard;
+            this.lblNumeroVaga.Click += AoClicarNoCard;
+            this.picStatusVaga.Click += AoClicarNoCard;
+
         }
 
         private void ctrStatusVagas_Load(object sender, EventArgs e)
@@ -50,13 +69,6 @@ namespace frmUrbanPark.Parts
             AtualizarAparenciaCard();
 
         }
-
-
-
-
-
-
-
 
 
 
@@ -80,10 +92,14 @@ namespace frmUrbanPark.Parts
                 this.picStatusVaga.Image = Properties.Resources.carIconVermlho;
             }
 
+        }
 
-
-
+        private void AoClicarNoCard(object sender, EventArgs e)
+        {
+            // Dispara o evento CardClicado, se houver algum inscrito
+            cardClicado?.Invoke(this, EventArgs.Empty);
         }
 
     } // Classe
+
 } // NameSpace
