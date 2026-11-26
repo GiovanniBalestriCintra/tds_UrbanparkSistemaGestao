@@ -36,9 +36,10 @@
             // picStatusVaga
             // 
             picStatusVaga.Image = Properties.Resources.carIconVerde;
-            picStatusVaga.Location = new Point(38, 57);
+            picStatusVaga.Location = new Point(47, 76);
+            picStatusVaga.Margin = new Padding(3, 4, 3, 4);
             picStatusVaga.Name = "picStatusVaga";
-            picStatusVaga.Size = new Size(50, 50);
+            picStatusVaga.Size = new Size(52, 55);
             picStatusVaga.TabIndex = 0;
             picStatusVaga.TabStop = false;
             // 
@@ -48,20 +49,21 @@
             lblNumeroVaga.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblNumeroVaga.Location = new Point(0, 0);
             lblNumeroVaga.Name = "lblNumeroVaga";
-            lblNumeroVaga.Size = new Size(130, 54);
+            lblNumeroVaga.Size = new Size(149, 72);
             lblNumeroVaga.TabIndex = 1;
             lblNumeroVaga.Text = "01";
             lblNumeroVaga.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ctrStatusVagas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(223, 247, 231);
             Controls.Add(lblNumeroVaga);
             Controls.Add(picStatusVaga);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ctrStatusVagas";
-            Size = new Size(130, 130);
+            Size = new Size(149, 173);
             Load += ctrStatusVagas_Load;
             ((System.ComponentModel.ISupportInitialize)picStatusVaga).EndInit();
             ResumeLayout(false);

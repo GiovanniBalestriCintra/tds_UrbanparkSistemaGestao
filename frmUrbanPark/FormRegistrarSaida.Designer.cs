@@ -39,9 +39,8 @@
             lblDataSaida = new Label();
             grpMovimentacao = new GroupBox();
             grpCalculo = new GroupBox();
-            lblValorAPagar = new TextBox();
             lblValorPagar = new Label();
-            textBox3 = new TextBox();
+            txtValorAPagar = new TextBox();
             txtInfoTarifa = new TextBox();
             txtInfoTempoPermanencia = new TextBox();
             lblTarifaVigente = new Label();
@@ -191,9 +190,8 @@
             // 
             // grpCalculo
             // 
-            grpCalculo.Controls.Add(lblValorAPagar);
             grpCalculo.Controls.Add(lblValorPagar);
-            grpCalculo.Controls.Add(textBox3);
+            grpCalculo.Controls.Add(txtValorAPagar);
             grpCalculo.Controls.Add(txtInfoTarifa);
             grpCalculo.Controls.Add(txtInfoTempoPermanencia);
             grpCalculo.Controls.Add(lblTarifaVigente);
@@ -206,16 +204,6 @@
             grpCalculo.TabStop = false;
             grpCalculo.Text = "Cálculo do Estacionamento";
             // 
-            // lblValorAPagar
-            // 
-            lblValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
-            lblValorAPagar.BorderStyle = BorderStyle.None;
-            lblValorAPagar.Location = new Point(297, 114);
-            lblValorAPagar.Multiline = true;
-            lblValorAPagar.Name = "lblValorAPagar";
-            lblValorAPagar.Size = new Size(172, 33);
-            lblValorAPagar.TabIndex = 4;
-            // 
             // lblValorPagar
             // 
             lblValorPagar.AutoSize = true;
@@ -227,20 +215,21 @@
             lblValorPagar.TabIndex = 3;
             lblValorPagar.Text = "Valor a Pagar:";
             // 
-            // textBox3
+            // txtValorAPagar
             // 
-            textBox3.BackColor = Color.FromArgb(223, 247, 231);
-            textBox3.Location = new Point(7, 111);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(462, 39);
-            textBox3.TabIndex = 2;
+            txtValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
+            txtValorAPagar.Location = new Point(7, 111);
+            txtValorAPagar.Multiline = true;
+            txtValorAPagar.Name = "txtValorAPagar";
+            txtValorAPagar.Size = new Size(462, 39);
+            txtValorAPagar.TabIndex = 2;
+            txtValorAPagar.TextAlign = HorizontalAlignment.Right;
             // 
             // txtInfoTarifa
             // 
             txtInfoTarifa.BackColor = SystemColors.ScrollBar;
             txtInfoTarifa.ForeColor = SystemColors.ScrollBar;
-            txtInfoTarifa.Location = new Point(216, 67);
+            txtInfoTarifa.Location = new Point(216, 72);
             txtInfoTarifa.Name = "txtInfoTarifa";
             txtInfoTarifa.ReadOnly = true;
             txtInfoTarifa.Size = new Size(210, 29);
@@ -250,7 +239,7 @@
             // 
             txtInfoTempoPermanencia.BackColor = SystemColors.ScrollBar;
             txtInfoTempoPermanencia.ForeColor = SystemColors.ScrollBar;
-            txtInfoTempoPermanencia.Location = new Point(216, 26);
+            txtInfoTempoPermanencia.Location = new Point(216, 32);
             txtInfoTempoPermanencia.Name = "txtInfoTempoPermanencia";
             txtInfoTempoPermanencia.ReadOnly = true;
             txtInfoTempoPermanencia.Size = new Size(210, 29);
@@ -261,7 +250,7 @@
             lblTarifaVigente.AutoSize = true;
             lblTarifaVigente.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTarifaVigente.ForeColor = SystemColors.Desktop;
-            lblTarifaVigente.Location = new Point(7, 67);
+            lblTarifaVigente.Location = new Point(7, 72);
             lblTarifaVigente.Name = "lblTarifaVigente";
             lblTarifaVigente.Size = new Size(119, 23);
             lblTarifaVigente.TabIndex = 0;
@@ -272,7 +261,7 @@
             lblTempoPermanencia.AutoSize = true;
             lblTempoPermanencia.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTempoPermanencia.ForeColor = SystemColors.Desktop;
-            lblTempoPermanencia.Location = new Point(6, 25);
+            lblTempoPermanencia.Location = new Point(6, 31);
             lblTempoPermanencia.Name = "lblTempoPermanencia";
             lblTempoPermanencia.Size = new Size(192, 23);
             lblTempoPermanencia.TabIndex = 0;
@@ -510,11 +499,10 @@
         private Label lblTempoPermanencia;
         private Label lblTarifaVigente;
         private TextBox textBox4;
-        private TextBox lblValorAPagar;
         private TextBox txtInfoTempoPermanencia;
         private TextBox txtInfoTarifa;
         private Label lblValorPagar;
-        private TextBox textBox3;
+        private TextBox txtValorAPagar;
         private PictureBox pictureBox1;
     }
 }
