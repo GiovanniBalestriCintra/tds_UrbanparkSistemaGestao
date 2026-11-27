@@ -289,6 +289,7 @@
             Controls.Add(grpBuscarVeiculo);
             Name = "FrmRegistrarEntrada";
             Text = "Registrar Entrada";
+            Load += FrmRegistrarEntrada_Load;
             grpBuscarVeiculo.ResumeLayout(false);
             grpBuscarVeiculo.PerformLayout();
             grpMovimentacao.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace frmUrbanPark
 {
-    partial class FormRegistrarSaida
+    partial class FrmRegistrarSaida
     {
         /// <summary>
         /// Required designer variable.
@@ -429,7 +429,7 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
-            // FormRegistrarSaida
+            // FrmRegistrarSaida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -439,7 +439,7 @@
             Controls.Add(grpMovimentacao);
             Controls.Add(grpDadosVeiculo);
             Controls.Add(grpBuscarVeiculo);
-            Name = "FormRegistrarSaida";
+            Name = "FrmRegistrarSaida";
             Text = "FormRegistrarSaida";
             panel1.ResumeLayout(false);
             grpMovimentacao.ResumeLayout(false);
