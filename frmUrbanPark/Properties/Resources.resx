@@ -121,8 +121,14 @@
   <data name="BannerEntrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\BannerEntrada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BannerEntrada2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\BannerEntrada2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BannerSaida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\BannerSaida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BannerSaida2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\BannerSaida2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carIconVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\carIconVerde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

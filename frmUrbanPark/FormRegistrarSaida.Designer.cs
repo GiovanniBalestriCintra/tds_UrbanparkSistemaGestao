@@ -73,10 +73,9 @@
             panel1.Controls.Add(btnRegistrarSaida);
             panel1.Controls.Add(btnCancelar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 533);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(0, 400);
             panel1.Name = "panel1";
-            panel1.Size = new Size(914, 67);
+            panel1.Size = new Size(800, 50);
             panel1.TabIndex = 12;
             // 
             // btnRegistrarSaida
@@ -84,10 +83,9 @@
             btnRegistrarSaida.BackColor = Color.FromArgb(223, 247, 231);
             btnRegistrarSaida.Image = Properties.Resources.icoConfirmado;
             btnRegistrarSaida.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistrarSaida.Location = new Point(601, 20);
-            btnRegistrarSaida.Margin = new Padding(3, 4, 3, 4);
+            btnRegistrarSaida.Location = new Point(526, 15);
             btnRegistrarSaida.Name = "btnRegistrarSaida";
-            btnRegistrarSaida.Size = new Size(169, 31);
+            btnRegistrarSaida.Size = new Size(148, 23);
             btnRegistrarSaida.TabIndex = 4;
             btnRegistrarSaida.Text = "Registrar Saida";
             btnRegistrarSaida.UseVisualStyleBackColor = false;
@@ -97,10 +95,9 @@
             btnCancelar.BackColor = Color.FromArgb(254, 224, 221);
             btnCancelar.Image = Properties.Resources.IcoCancelar;
             btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelar.Location = new Point(777, 20);
-            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Location = new Point(680, 15);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(123, 31);
+            btnCancelar.Size = new Size(108, 23);
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -110,9 +107,9 @@
             lblCorModelo.AutoSize = true;
             lblCorModelo.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCorModelo.ForeColor = SystemColors.Desktop;
-            lblCorModelo.Location = new Point(11, 123);
+            lblCorModelo.Location = new Point(10, 92);
             lblCorModelo.Name = "lblCorModelo";
-            lblCorModelo.Size = new Size(117, 23);
+            lblCorModelo.Size = new Size(91, 17);
             lblCorModelo.TabIndex = 0;
             lblCorModelo.Text = "Cor / Modelo:";
             // 
@@ -121,9 +118,9 @@
             lblCliente.AutoSize = true;
             lblCliente.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCliente.ForeColor = SystemColors.Desktop;
-            lblCliente.Location = new Point(11, 35);
+            lblCliente.Location = new Point(10, 26);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(67, 23);
+            lblCliente.Size = new Size(52, 17);
             lblCliente.TabIndex = 0;
             lblCliente.Text = "Cliente:";
             // 
@@ -132,29 +129,26 @@
             dtInfoHrEntrada.CustomFormat = "HH:mm";
             dtInfoHrEntrada.Font = new Font("Microsoft Sans Serif", 8.25F);
             dtInfoHrEntrada.Format = DateTimePickerFormat.Short;
-            dtInfoHrEntrada.Location = new Point(131, 77);
-            dtInfoHrEntrada.Margin = new Padding(3, 4, 3, 4);
+            dtInfoHrEntrada.Location = new Point(115, 58);
             dtInfoHrEntrada.Name = "dtInfoHrEntrada";
             dtInfoHrEntrada.ShowUpDown = true;
-            dtInfoHrEntrada.Size = new Size(102, 23);
+            dtInfoHrEntrada.Size = new Size(90, 20);
             dtInfoHrEntrada.TabIndex = 3;
             // 
             // txtCorModelo
             // 
             txtCorModelo.BackColor = SystemColors.ScrollBar;
-            txtCorModelo.Location = new Point(128, 117);
-            txtCorModelo.Margin = new Padding(3, 4, 3, 4);
+            txtCorModelo.Location = new Point(112, 88);
             txtCorModelo.Name = "txtCorModelo";
-            txtCorModelo.Size = new Size(228, 29);
+            txtCorModelo.Size = new Size(200, 25);
             txtCorModelo.TabIndex = 1;
             // 
             // txtNomeCliente
             // 
             txtNomeCliente.BackColor = SystemColors.ScrollBar;
-            txtNomeCliente.Location = new Point(128, 31);
-            txtNomeCliente.Margin = new Padding(3, 4, 3, 4);
+            txtNomeCliente.Location = new Point(112, 23);
             txtNomeCliente.Name = "txtNomeCliente";
-            txtNomeCliente.Size = new Size(228, 29);
+            txtNomeCliente.Size = new Size(200, 25);
             txtNomeCliente.TabIndex = 1;
             // 
             // lblDataSaida
@@ -162,9 +156,9 @@
             lblDataSaida.AutoSize = true;
             lblDataSaida.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDataSaida.ForeColor = SystemColors.Desktop;
-            lblDataSaida.Location = new Point(6, 76);
+            lblDataSaida.Location = new Point(5, 57);
             lblDataSaida.Name = "lblDataSaida";
-            lblDataSaida.Size = new Size(120, 23);
+            lblDataSaida.Size = new Size(94, 17);
             lblDataSaida.TabIndex = 0;
             lblDataSaida.Text = "Data de Saída:";
             // 
@@ -179,11 +173,9 @@
             grpMovimentacao.Controls.Add(lblDataSaida);
             grpMovimentacao.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grpMovimentacao.ForeColor = SystemColors.HotTrack;
-            grpMovimentacao.Location = new Point(403, 225);
-            grpMovimentacao.Margin = new Padding(3, 4, 3, 4);
+            grpMovimentacao.Location = new Point(353, 169);
             grpMovimentacao.Name = "grpMovimentacao";
-            grpMovimentacao.Padding = new Padding(3, 4, 3, 4);
-            grpMovimentacao.Size = new Size(484, 283);
+            grpMovimentacao.Size = new Size(424, 212);
             grpMovimentacao.TabIndex = 9;
             grpMovimentacao.TabStop = false;
             grpMovimentacao.Text = "Movimentação";
@@ -197,9 +189,11 @@
             grpCalculo.Controls.Add(lblTarifaVigente);
             grpCalculo.Controls.Add(lblTempoPermanencia);
             grpCalculo.ForeColor = SystemColors.HotTrack;
-            grpCalculo.Location = new Point(0, 119);
+            grpCalculo.Location = new Point(0, 89);
+            grpCalculo.Margin = new Padding(3, 2, 3, 2);
             grpCalculo.Name = "grpCalculo";
-            grpCalculo.Size = new Size(484, 164);
+            grpCalculo.Padding = new Padding(3, 2, 3, 2);
+            grpCalculo.Size = new Size(424, 123);
             grpCalculo.TabIndex = 5;
             grpCalculo.TabStop = false;
             grpCalculo.Text = "Cálculo do Estacionamento";
@@ -209,19 +203,20 @@
             lblValorPagar.AutoSize = true;
             lblValorPagar.BackColor = Color.FromArgb(223, 247, 231);
             lblValorPagar.ForeColor = SystemColors.Desktop;
-            lblValorPagar.Location = new Point(11, 119);
+            lblValorPagar.Location = new Point(10, 89);
             lblValorPagar.Name = "lblValorPagar";
-            lblValorPagar.Size = new Size(117, 23);
+            lblValorPagar.Size = new Size(92, 17);
             lblValorPagar.TabIndex = 3;
             lblValorPagar.Text = "Valor a Pagar:";
             // 
             // txtValorAPagar
             // 
             txtValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
-            txtValorAPagar.Location = new Point(7, 111);
+            txtValorAPagar.Location = new Point(6, 83);
+            txtValorAPagar.Margin = new Padding(3, 2, 3, 2);
             txtValorAPagar.Multiline = true;
             txtValorAPagar.Name = "txtValorAPagar";
-            txtValorAPagar.Size = new Size(462, 39);
+            txtValorAPagar.Size = new Size(405, 30);
             txtValorAPagar.TabIndex = 2;
             txtValorAPagar.TextAlign = HorizontalAlignment.Right;
             // 
@@ -229,20 +224,22 @@
             // 
             txtInfoTarifa.BackColor = SystemColors.ScrollBar;
             txtInfoTarifa.ForeColor = SystemColors.ScrollBar;
-            txtInfoTarifa.Location = new Point(216, 72);
+            txtInfoTarifa.Location = new Point(189, 54);
+            txtInfoTarifa.Margin = new Padding(3, 2, 3, 2);
             txtInfoTarifa.Name = "txtInfoTarifa";
             txtInfoTarifa.ReadOnly = true;
-            txtInfoTarifa.Size = new Size(210, 29);
+            txtInfoTarifa.Size = new Size(184, 25);
             txtInfoTarifa.TabIndex = 1;
             // 
             // txtInfoTempoPermanencia
             // 
             txtInfoTempoPermanencia.BackColor = SystemColors.ScrollBar;
             txtInfoTempoPermanencia.ForeColor = SystemColors.ScrollBar;
-            txtInfoTempoPermanencia.Location = new Point(216, 32);
+            txtInfoTempoPermanencia.Location = new Point(189, 24);
+            txtInfoTempoPermanencia.Margin = new Padding(3, 2, 3, 2);
             txtInfoTempoPermanencia.Name = "txtInfoTempoPermanencia";
             txtInfoTempoPermanencia.ReadOnly = true;
-            txtInfoTempoPermanencia.Size = new Size(210, 29);
+            txtInfoTempoPermanencia.Size = new Size(184, 25);
             txtInfoTempoPermanencia.TabIndex = 1;
             // 
             // lblTarifaVigente
@@ -250,9 +247,9 @@
             lblTarifaVigente.AutoSize = true;
             lblTarifaVigente.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTarifaVigente.ForeColor = SystemColors.Desktop;
-            lblTarifaVigente.Location = new Point(7, 72);
+            lblTarifaVigente.Location = new Point(6, 54);
             lblTarifaVigente.Name = "lblTarifaVigente";
-            lblTarifaVigente.Size = new Size(119, 23);
+            lblTarifaVigente.Size = new Size(93, 17);
             lblTarifaVigente.TabIndex = 0;
             lblTarifaVigente.Text = "Tarifa Vigente:";
             // 
@@ -261,9 +258,9 @@
             lblTempoPermanencia.AutoSize = true;
             lblTempoPermanencia.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTempoPermanencia.ForeColor = SystemColors.Desktop;
-            lblTempoPermanencia.Location = new Point(6, 31);
+            lblTempoPermanencia.Location = new Point(5, 23);
             lblTempoPermanencia.Name = "lblTempoPermanencia";
-            lblTempoPermanencia.Size = new Size(192, 23);
+            lblTempoPermanencia.Size = new Size(153, 17);
             lblTempoPermanencia.TabIndex = 0;
             lblTempoPermanencia.Text = "Tempo de Permanência:";
             // 
@@ -272,10 +269,9 @@
             dtInfoDtEntrada.CustomFormat = "dd/MM/yyyy HH:mm";
             dtInfoDtEntrada.Font = new Font("Microsoft Sans Serif", 8.25F);
             dtInfoDtEntrada.Format = DateTimePickerFormat.Custom;
-            dtInfoDtEntrada.Location = new Point(198, 37);
-            dtInfoDtEntrada.Margin = new Padding(3, 4, 3, 4);
+            dtInfoDtEntrada.Location = new Point(173, 28);
             dtInfoDtEntrada.Name = "dtInfoDtEntrada";
-            dtInfoDtEntrada.Size = new Size(193, 23);
+            dtInfoDtEntrada.Size = new Size(169, 20);
             dtInfoDtEntrada.TabIndex = 4;
             // 
             // dateTimePicker1
@@ -283,11 +279,10 @@
             dateTimePicker1.CustomFormat = "HH:mm";
             dateTimePicker1.Font = new Font("Microsoft Sans Serif", 8.25F);
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(367, 76);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
+            dateTimePicker1.Location = new Point(321, 57);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.ShowUpDown = true;
-            dateTimePicker1.Size = new Size(102, 23);
+            dateTimePicker1.Size = new Size(90, 20);
             dateTimePicker1.TabIndex = 3;
             // 
             // lblDataHoraEntrada
@@ -295,9 +290,9 @@
             lblDataHoraEntrada.AutoSize = true;
             lblDataHoraEntrada.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDataHoraEntrada.ForeColor = SystemColors.Desktop;
-            lblDataHoraEntrada.Location = new Point(6, 35);
+            lblDataHoraEntrada.Location = new Point(5, 26);
             lblDataHoraEntrada.Name = "lblDataHoraEntrada";
-            lblDataHoraEntrada.Size = new Size(193, 23);
+            lblDataHoraEntrada.Size = new Size(152, 17);
             lblDataHoraEntrada.TabIndex = 0;
             lblDataHoraEntrada.Text = "Data / Hora de Entrada:";
             // 
@@ -306,18 +301,17 @@
             lblHoraSaida.AutoSize = true;
             lblHoraSaida.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHoraSaida.ForeColor = SystemColors.Desktop;
-            lblHoraSaida.Location = new Point(239, 76);
+            lblHoraSaida.Location = new Point(209, 57);
             lblHoraSaida.Name = "lblHoraSaida";
-            lblHoraSaida.Size = new Size(122, 23);
+            lblHoraSaida.Size = new Size(96, 17);
             lblHoraSaida.TabIndex = 0;
             lblHoraSaida.Text = "Hora de Saída:";
             // 
             // maskedTextBox1
             // 
-            maskedTextBox1.Location = new Point(175, 31);
-            maskedTextBox1.Margin = new Padding(3, 4, 3, 4);
+            maskedTextBox1.Location = new Point(153, 23);
             maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(151, 32);
+            maskedTextBox1.Size = new Size(133, 27);
             maskedTextBox1.TabIndex = 2;
             // 
             // lblPlacaVeiculo
@@ -325,9 +319,9 @@
             lblPlacaVeiculo.AutoSize = true;
             lblPlacaVeiculo.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPlacaVeiculo.ForeColor = SystemColors.Desktop;
-            lblPlacaVeiculo.Location = new Point(30, 34);
+            lblPlacaVeiculo.Location = new Point(26, 26);
             lblPlacaVeiculo.Name = "lblPlacaVeiculo";
-            lblPlacaVeiculo.Size = new Size(139, 23);
+            lblPlacaVeiculo.Size = new Size(108, 17);
             lblPlacaVeiculo.TabIndex = 1;
             lblPlacaVeiculo.Text = "Placa do Veículo:";
             // 
@@ -337,10 +331,9 @@
             btnBuscarPorPlaca.ForeColor = SystemColors.ActiveCaptionText;
             btnBuscarPorPlaca.Image = Properties.Resources.IcoPesquisaAzul;
             btnBuscarPorPlaca.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBuscarPorPlaca.Location = new Point(456, 31);
-            btnBuscarPorPlaca.Margin = new Padding(3, 4, 3, 4);
+            btnBuscarPorPlaca.Location = new Point(399, 23);
             btnBuscarPorPlaca.Name = "btnBuscarPorPlaca";
-            btnBuscarPorPlaca.Size = new Size(181, 32);
+            btnBuscarPorPlaca.Size = new Size(158, 24);
             btnBuscarPorPlaca.TabIndex = 0;
             btnBuscarPorPlaca.Text = "Buscar por Placa";
             btnBuscarPorPlaca.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -359,11 +352,9 @@
             grpDadosVeiculo.Controls.Add(lblCliente);
             grpDadosVeiculo.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grpDadosVeiculo.ForeColor = SystemColors.HotTrack;
-            grpDadosVeiculo.Location = new Point(23, 225);
-            grpDadosVeiculo.Margin = new Padding(3, 4, 3, 4);
+            grpDadosVeiculo.Location = new Point(20, 169);
             grpDadosVeiculo.Name = "grpDadosVeiculo";
-            grpDadosVeiculo.Padding = new Padding(3, 4, 3, 4);
-            grpDadosVeiculo.Size = new Size(374, 283);
+            grpDadosVeiculo.Size = new Size(327, 212);
             grpDadosVeiculo.TabIndex = 10;
             grpDadosVeiculo.TabStop = false;
             grpDadosVeiculo.Text = "Dados do Veículo";
@@ -371,27 +362,24 @@
             // textBox2
             // 
             textBox2.BackColor = SystemColors.ScrollBar;
-            textBox2.Location = new Point(128, 160);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Location = new Point(112, 120);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(83, 29);
+            textBox2.Size = new Size(73, 25);
             textBox2.TabIndex = 1;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(578, 194);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
+            textBox4.Location = new Point(506, 146);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(228, 29);
+            textBox4.Size = new Size(200, 25);
             textBox4.TabIndex = 1;
             // 
             // textBox1
             // 
             textBox1.BackColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(128, 76);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(112, 57);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(228, 29);
+            textBox1.Size = new Size(200, 25);
             textBox1.TabIndex = 1;
             // 
             // lblVaga
@@ -399,9 +387,9 @@
             lblVaga.AutoSize = true;
             lblVaga.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblVaga.ForeColor = SystemColors.Desktop;
-            lblVaga.Location = new Point(11, 166);
+            lblVaga.Location = new Point(10, 124);
             lblVaga.Name = "lblVaga";
-            lblVaga.Size = new Size(52, 23);
+            lblVaga.Size = new Size(40, 17);
             lblVaga.TabIndex = 0;
             lblVaga.Text = "Vaga:";
             // 
@@ -410,9 +398,9 @@
             lblPlaca.AutoSize = true;
             lblPlaca.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPlaca.ForeColor = SystemColors.Desktop;
-            lblPlaca.Location = new Point(11, 79);
+            lblPlaca.Location = new Point(10, 59);
             lblPlaca.Name = "lblPlaca";
-            lblPlaca.Size = new Size(54, 23);
+            lblPlaca.Size = new Size(42, 17);
             lblPlaca.TabIndex = 0;
             lblPlaca.Text = "Placa:";
             // 
@@ -423,11 +411,9 @@
             grpBuscarVeiculo.Controls.Add(btnBuscarPorPlaca);
             grpBuscarVeiculo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grpBuscarVeiculo.ForeColor = SystemColors.HotTrack;
-            grpBuscarVeiculo.Location = new Point(23, 137);
-            grpBuscarVeiculo.Margin = new Padding(3, 4, 3, 4);
+            grpBuscarVeiculo.Location = new Point(20, 103);
             grpBuscarVeiculo.Name = "grpBuscarVeiculo";
-            grpBuscarVeiculo.Padding = new Padding(3, 4, 3, 4);
-            grpBuscarVeiculo.Size = new Size(864, 80);
+            grpBuscarVeiculo.Size = new Size(756, 60);
             grpBuscarVeiculo.TabIndex = 8;
             grpBuscarVeiculo.TabStop = false;
             grpBuscarVeiculo.Text = "Buscar Veículo";
@@ -435,26 +421,24 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = Properties.Resources.BannerSaida;
+            pictureBox1.Image = Properties.Resources.BannerSaida2;
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(914, 100);
+            pictureBox1.Size = new Size(800, 75);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
             // FormRegistrarSaida
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Controls.Add(grpMovimentacao);
             Controls.Add(grpDadosVeiculo);
             Controls.Add(grpBuscarVeiculo);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormRegistrarSaida";
             Text = "FormRegistrarSaida";
             panel1.ResumeLayout(false);
